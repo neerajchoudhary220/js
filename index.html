@@ -22,126 +22,112 @@
     />
   </head>
   <body>
-
     <div class="container">
       <div class="row">
-        <div class="col-6 border bordar-seconary p-2">
-          <div class="row">
-            <div class="col-12">
-              <div class="d-flex justify-content-between">
-                <div>
-                  <div class="copyarea nj-inline-block mr-2">
-                    <span>\[(.|\n)*?\];?</span>
-                  </div>
-                  <span> ==>["hello"]</span>
-                  <i class="fa fa-copy copybtn text-secondary"></i>
-                  <div class="badge badge-success" style="display: none">
-                    Copied!
-                  </div>
-                </div>
+        <div class="col-12 border bordar-seconary p-2 justify-content-between">
+          <div>
+            <div class="copyarea nj-inline-block mr-2">
+              <span>\[(.|\n)*?\];?</span>
+            </div>
+            <span> ==>["hello"]</span>
+            <i class="fa fa-copy copybtn text-secondary"></i>
+            <div class="badge badge-success" style="display: none">Copied!</div>
+          </div>
+        </div>
 
-                <div>
-                  <div class="copyarea nj-inline-block mr-2">
-                    <span>\((.|\n)*?\);?</span>
-                  </div>
-                  <span> ==>("hello")</span>
-                  <i class="fa fa-copy copybtn text-secondary"></i>
-                  <div class="badge badge-success" style="display: none">
-                    Copied!
-                  </div>
-                </div>
+        <div class="col-12 border bordar-seconary p-2 justify-content-between">
+          <div>
+            <div class="copyarea nj-inline-block mr-2">
+              <span>\((.|\n)*?\);?</span>
+            </div>
+            <span> ==>("hello")</span>
+            <i class="fa fa-copy copybtn text-secondary"></i>
+            <div class="badge badge-success" style="display: none">Copied!</div>
+          </div>
+        </div>
+
+        <div class="col-12 border bordar-seconary p-2">
+          <div class="d-flex justify-content-between">
+            <b>Handlebars comment Regex:</b>
+            <div>
+              <div class="copyarea nj-inline-block mr-2">
+                <span>\{\{!--(.|\n)*?--\}\} </span>
               </div>
-            </div>
 
-            <div class="col-12">
-                <div class="d-flex justify-content-between">
-                    <b>Handlebars comment Regex:</b>
-                    <div>
-                      <div class="copyarea nj-inline-block mr-2">
-                        <span>\{\{!--(.|\n)*?--\}\} </span>
-                      </div>
-    
-                      <i class="fa fa-copy copybtn text-secondary"></i>
-                      <div class="badge badge-success" style="display: none">
-                        Copied!
-                      </div>
-                    </div>
-                  </div> 
-            </div>
-
-            <div class="col-12">
-                <div class="d-flex justify-content-between">
-                    <b>Js comment Regex:</b>
-                    <div>
-                      <div class="copyarea nj-inline-block mr-2">
-                        <span>\/\/((.|\n)*?.*) </span>
-                      </div>
-    
-                      <i class="fa fa-copy copybtn text-secondary"></i>
-                      <div class="badge badge-success" style="display: none">
-                        Copied!
-                      </div>
-                    </div>
-                  </div> 
+              <i class="fa fa-copy copybtn text-secondary"></i>
+              <div class="badge badge-success" style="display: none">
+                Copied!
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="col-6 border bordar-seconary p-2">
-          <div class="row">
-            <div class="col-12">
-              <div class="d-flex justify-content-between">
-                <b>Laravel Balde Comment Regex:</b>
-                <div>
-                  <div class="copyarea nj-inline-block mr-2">
-                    <span>\{{--(.|\n)*?--}} </span>
-                  </div>
-
-                  <i class="fa fa-copy copybtn text-secondary"></i>
-                  <div class="badge badge-success" style="display: none">
-                    Copied!
-                  </div>
-                </div>
+        <div class="col-12 border bordar-seconary p-2">
+          <div class="d-flex justify-content-between">
+            <b>Js comment Regex:</b>
+            <div>
+              <div class="copyarea nj-inline-block mr-2">
+                <span>\/\/((.|\n)*?.*) </span>
               </div>
-            </div>
-            <div class="col-12">
-                <div class="d-flex justify-content-between">
-                    <b>Remove console.log() from js</b>
-                    <div>
-                      <div class="copyarea nj-inline-block mr-2">
-                        <span>console\.log\((.|\n)*?\);? </span>
-                      </div>
-    
-                      <i class="fa fa-copy copybtn text-secondary"></i>
-                      <div class="badge badge-success" style="display: none">
-                        Copied!
-                      </div>
-                    </div>
-                  </div> 
-            </div>
 
-            <div class="col-12">
-                <div class="d-flex justify-content-between">
-                    <b> Python comment like #comments:</b>
-                    <div>
-                      <div class="copyarea nj-inline-block mr-2">
-                        <span>#(.|\n)*?.* </span>
-                      </div>
-    
-                      <i class="fa fa-copy copybtn text-secondary"></i>
-                      <div class="badge badge-success" style="display: none">
-                        Copied!
-                      </div>
-                    </div>
-                  </div> 
+              <i class="fa fa-copy copybtn text-secondary"></i>
+              <div class="badge badge-success" style="display: none">
+                Copied!
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <br />
+      <div class="row">
+        <div class="col-12 border bordar-seconary p-2">
+          <div class="d-flex justify-content-between">
+            <b>Laravel Balde Comment Regex:</b>
+            <div>
+              <div class="copyarea nj-inline-block mr-2">
+                <span>\{{--(.|\n)*?--}} </span>
+              </div>
+
+              <i class="fa fa-copy copybtn text-secondary"></i>
+              <div class="badge badge-success" style="display: none">
+                Copied!
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 border bordar-seconary p-2">
+          <div class="d-flex justify-content-between">
+            <b>Remove console.log() from js</b>
+            <div>
+              <div class="copyarea nj-inline-block mr-2">
+                <span>console\.log\((.|\n)*?\);? </span>
+              </div>
+
+              <i class="fa fa-copy copybtn text-secondary"></i>
+              <div class="badge badge-success" style="display: none">
+                Copied!
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 border bordar-seconary p-2">
+          <div class="d-flex justify-content-between">
+            <b> Python comment like #comments:</b>
+            <div>
+              <div class="copyarea nj-inline-block mr-2">
+                <span>#(.|\n)*?.* </span>
+              </div>
+
+              <i class="fa fa-copy copybtn text-secondary"></i>
+              <div class="badge badge-success" style="display: none">
+                Copied!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    
   </body>
 
   <script src="./file/test.js"></script>

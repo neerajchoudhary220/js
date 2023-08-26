@@ -1,6 +1,8 @@
 .nj-inline-block{
 display: inline-block;
 }
-.copybtn{
+
+.copybtn:hover{
     cursor: pointer;
+    font-size: larger;
 }
