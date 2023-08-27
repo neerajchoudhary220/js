@@ -1,8 +1,11 @@
 $(document).ready(function () {
 
     $(".copybtn").click(function () {
-        var txt = $(this).parent().find(".copyarea").text();
+        var txt = $(this).parent().find(".copyarea").html();
+        txt = txt.replace(/<br(.|)?>/gm, "neeraj").replace(/<[^>]*>/gm, "").replace(/neeraj/gm, "\n").replace(/&nbsp;/gm, " ")
+
         CopyToClipboard(txt);
+
         var copied = $(this).parent().find(".badge")
 
         var self = $(this);
@@ -12,7 +15,7 @@ $(document).ready(function () {
         copied.fadeIn("slow", () => {
             self.removeClass('text-success');
         });
-        copied.fadeOut("slow",()=>{
+        copied.fadeOut("slow", () => {
             self.addClass('text-secondary')
         });
 
@@ -23,7 +26,7 @@ $(document).ready(function () {
 
 
     function CopyToClipboard(txt) {
-        var $temp = $("<input>")
+        var $temp = $("<textarea>")
         $("body").append($temp);
         $temp.val(txt).select();
         document.execCommand("copy");
