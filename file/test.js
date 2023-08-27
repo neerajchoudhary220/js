@@ -21,18 +21,14 @@ $(document).ready(function () {
 
     });
 
-    // $(this).tooltip();
-
- 
-
-    function CopyToClipboard(txt) {
-        var $temp = $("<textarea>")
-        $("body").append($temp);
-        $temp.val(txt).select();
-        document.execCommand("copy");
-        $temp.remove();
-    }
 })
+function CopyToClipboard(txt) {
+    var $temp = $("<textarea>")
+    $("body").append($temp);
+    $temp.val(txt).select();
+    document.execCommand("copy");
+    $temp.remove();
+}
 
 function RemoveHtmlTags(html) {
     return html.replace(/<br(.|)?>/gm, "neeraj").replace(/<[^>]*>/gm, "").replace(/neeraj/gm, "\n").replace(/&nbsp;/gm, " ");
