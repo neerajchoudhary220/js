@@ -2,8 +2,7 @@ $(document).ready(function () {
 
     $(".copybtn").click(function () {
         var txt = $(this).parent().find(".copyarea").html();
-        txt = txt.replace(/<br(.|)?>/gm, "neeraj").replace(/<[^>]*>/gm, "").replace(/neeraj/gm, "\n").replace(/&nbsp;/gm, " ")
-
+        txt = RemoveHtmlTags(txt);
         CopyToClipboard(txt);
 
         var copied = $(this).parent().find(".badge")
@@ -24,6 +23,7 @@ $(document).ready(function () {
 
     // $(this).tooltip();
 
+ 
 
     function CopyToClipboard(txt) {
         var $temp = $("<textarea>")
@@ -33,3 +33,7 @@ $(document).ready(function () {
         $temp.remove();
     }
 })
+
+function RemoveHtmlTags(html) {
+    return html.replace(/<br(.|)?>/gm, "neeraj").replace(/<[^>]*>/gm, "").replace(/neeraj/gm, "\n").replace(/&nbsp;/gm, " ");
+}
