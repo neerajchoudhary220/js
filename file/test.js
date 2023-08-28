@@ -3,7 +3,7 @@ $(document).ready(function () {
     $(".copybtn").click(function () {
         var txt = $(this).parent().find(".copyarea").html();
         txt = RemoveHtmlTags(txt);
-        CopyToClipboard(txt);
+        CopyToClipboard(txt.trim());
 
         var copied = $(this).parent().find(".badge")
 
