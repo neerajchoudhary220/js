@@ -13,7 +13,7 @@ function showFile(input) {
 
     }
     filereader.onprogress = function (e) {
-        console.log(e)
+        // console.log(e)
 
     }
     filereader.onload = function () {
