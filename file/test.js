@@ -35,7 +35,7 @@ function CopyToClipboard(txt) {
 }
 
 function RemoveHtmlTags(html) {
-    return html.replace(/<br(.|)?>/gm, "neeraj").replace(/<[^>]*>/gm, "").replace(/neeraj/gm, "\n").replace(/&nbsp;/gm, " ");
+    return html.replace(/<br(.|)?>/gm, "neeraj").replace(/<[^>]*>/gm, "").replace(/neeraj/gm, "\n").replace(/&nbsp;/gm, " ").replace(/&lt;/gm,"<").replace(/&gt;/gm,">");
 }
 
     
