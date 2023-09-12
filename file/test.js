@@ -1,5 +1,9 @@
 $(document).ready(function () {
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();   
+      });
 
+      
     $(".copybtn").click(function () {
         var txt = $(this).parent().find(".copyarea").html();
         txt = RemoveHtmlTags(txt);

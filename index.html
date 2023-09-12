@@ -23,65 +23,20 @@
   </head>
   <body>
     <div class="container">
-      <div class="row" id="uploadFileSection">
-        <div class="col-3">
-          <div class="row">
-            <div class="col-12 upload_icon">
-              <div class="row">
-                <div class="col-12 d-flex justify-content-center">
-                  <i
-                  class="fa fa-upload text-info"
-                  style="font-size: 60px; cursor: pointer"
-                  id="uploadButton"
-                ></i
-                ><br />
-                <input
-                  type="file"
-                  class="d-none"
-                  accept=".csv"
-                  id="real_upload"
-                  onchange="showFile(this)"
-                />
-                </div>
-                <div
-                class="col-12 d-flex justify-content-center  text-info"
-              >
-                <b class="upload_txt">Upload File</b>
-              </div>
-              </div>
-             
-            </div>
-           
-            <div class="col-12 check_mark d-none">
-              <div class="row">
-                <div class="col-12 d-flex justify-content-center">
-                  <i class="fa fa-check-circle  text-success" style="font-size: 60px; cursor: pointer"></i>
-                </div>
-                <div class="col-12 d-flex justify-content-center text-success">
-                  <b>Uploaded done!</b>
-                </div>
-              </div>
+      <div class="row">
+        <div class="col-12 border bordar-seconary p-2 justify-content-between">
+          <div>
+            <div class="copyarea nj-inline-block mr-2">
+              <!-- write text here -->
             </div>
 
-            <div class="col-12 d-flex justify-content-center">
-              <div class="custom-loader d-none"></div>
-            </div>
+            <i class="fa fa-copy copybtn text-secondary"></i>
+            <div class="badge badge-success" style="display: none">Copied!</div>
           </div>
-        </div>
-        <div class="col-4"></div>
-
-        <div class="col-5">
-          <button
-            class="btn btn-outline-info btn-sm mt-4 d-none"
-            id="convert_csv_to_json_btn"
-          >
-            Convert Csv To Json
-          </button>
-          <button class="btn btn-outline-warning btn-sm mt-4 ml-3 d-none" id="convert_new_file_btn">Convert New File></button>
         </div>
       </div>
     </div>
-
-    <script src="./tools/convert-csv-into-json.js"></script>
   </body>
+  <script src="./file/test.js"></script>
+
 </html>
