@@ -27,3 +27,26 @@
     animation:s7 1s infinite;
   }
   @keyframes s7 {to{transform: rotate(.5turn)}}
+
+  .round-10 {
+    border-radius: 10px !important;
+}
+.imageUploader{
+  position: relative;
+  width: 230px !important;
+
+}
+
+#imageView{
+  height: 210px !important;
+   width: 230px !important;
+  border: gray solid 1px;
+  border-radius: 2%;
+  padding: 2px;
+  position: relative;
+}
+#imageView>img{
+  width: 100%; 
+  height:100%;
+}
+#fileField{display: none;}
